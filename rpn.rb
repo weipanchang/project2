@@ -34,6 +34,8 @@ def rpn(tokens)
 end
 
 if __FILE__ == $0 then
-    puts rpn(ARGV)
+#    print (ARGV.to_a)
+#    puts
+    puts rpn(ARGV.to_a)
 end
 
