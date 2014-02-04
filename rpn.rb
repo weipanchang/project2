@@ -2,6 +2,7 @@
 
 #import sys
 #
+
 def is_op(c)
     return ['*', '/', '+', '-'].include? c
 end
@@ -32,6 +33,7 @@ def rpn(tokens)
     end
     
 end
+AGRC << gets()
 
 if __FILE__ == $0 then
 #    print (ARGV.to_a)
