@@ -1,6 +1,4 @@
 #!/usr/bin/env ruby
-
-#import sys
 #
 
 def is_op(c)
@@ -33,11 +31,13 @@ def rpn(tokens)
     end
     
 end
-AGRC << gets()
 
-if __FILE__ == $0 then
-#    print (ARGV.to_a)
-#    puts
-    puts rpn(ARGV.to_a)
+
+if caller.length == 0 then
+    puts "input?"
+    input = gets.chomp
+    #puts a
+    #puts(a.split(' '))
+    puts(rpn(input.split(' ')))
 end
 
