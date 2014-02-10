@@ -29,7 +29,6 @@ def rpn(tokens)
     if stack.size == 1 then
         return stack.shift()
     end
-    
 end
 
 
