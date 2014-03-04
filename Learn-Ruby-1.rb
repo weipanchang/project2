@@ -168,7 +168,17 @@
 #end
 #
 #puts func(:add_on, 3, 4)
+#
+#result = []
+#weird_array = ["blah", :meow, 42, 90, :building]
+#weird_array.select do |i|
+#  result << i if i.instance_of?(Symbol) == true
+#end
+#puts result
 
-
+sports = ["basketball", "baseball", "football"]
+sports.each_with_index do |i, j|
+  puts j.to_s + (". ") + i.to_s
+end
 
 
