@@ -176,9 +176,26 @@
 #end
 #puts result
 
-sports = ["basketball", "baseball", "football"]
-sports.each_with_index do |i, j|
-  puts j.to_s + (". ") + i.to_s
+#sports = ["basketball", "baseball", "football"]
+#sports.each_with_index do |i, j|
+#  puts j.to_s + (". ") + i.to_s
+#end
+
+x = (50..99).to_a
+z = 0
+#print x
+x.each do |i|
+  x.reverse.each do |j|
+    puts i, j
+    z = (i * j)
+    if (i * j).to_s == (i * j).to_s.reverse
+      break
+    end
+  end
 end
+
+print z
+
+
 
 
